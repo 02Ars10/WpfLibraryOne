@@ -97,7 +97,7 @@ namespace WpfLibraryOne
             double upLimit = Convert.ToDouble(tbUpLimit.Text);
             ICalculator calculator = GetCalculator();
 
-            int totalSteps = 10000;
+            int totalSteps = tbN;// значение шагов отрисовки должно быть равно количеству шагов
             for (int i = 1; i < totalSteps; i++)
             {
                 double time = 0.0;
